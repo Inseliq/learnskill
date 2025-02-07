@@ -1,4 +1,5 @@
 .SavedPage {
+  --margin-top-clamp: clamp(2rem, 1.6861rem + 1.4599vw, 3rem);
   width: 100%;
   height: 100%;
   display: flex;
@@ -7,15 +8,24 @@
   border: 1px solid whitesmoke;
   overflow-y: auto;
 
+  & .back-link {
+    z-index: 2;
+  }
+
+  & .back-link::before {
+    position: absolute;
+    content: "На главную";
+    right: -255%;
+    z-index: -1;
+  }
+
   & .main__content {
     width: 100%;
     display: flex;
-    justify-content: center;
-    margin-top: clamp(2rem, 1.6861rem + 1.4599vw, 3rem);
-    align-items: center;
-    flex-direction: column;
+    margin-top: calc(var(--margin-top-clamp) + 10px);
     flex-wrap: wrap;
     gap: 15px;
+    padding: 5px;
 
     & .card-video {
       width: 300px;
@@ -58,12 +68,8 @@
         }
       }
 
-      &:active {
-        scale: 0.975;
-      }
-
       & .content-card-video-onhover {
-        display: flex;
+        display: none;
         width: 100%;
         height: 100%;
         justify-content: center;
@@ -72,26 +78,28 @@
         transition: 0.3s ease all;
 
         & .link-bg {
-          width: 64px;
-          height: 64px;
+          width: auto;
+          height: 48px;
           background: none;
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
-        }
+          cursor: pointer;
+          z-index: 1;
 
-        & .vk-video {
-          background-image: url();
-        }
+          & img {
+            height: 48px;
+          }
 
-        & .youtube {
-          background-image: url();
+          &:hover {
+            scale: 1.05;
+          }
         }
       }
 
       & .content-card-video-prehover {
         text-align: center;
-        display: none;
+        display: block;
         position: relative;
         z-index: 1;
         font-weight: 600;
@@ -101,7 +109,19 @@
     }
 
     & .test-video {
-      background-image: url();
+      background-image: url(../../assets/img/saved_img.jpg);
+    }
+  }
+}
+
+@media screen and (max-width: 657px) {
+  .SavedPage {
+    & .main__content {
+      justify-content: center;
+    }
+
+    & .back-link::before {
+      right: -275%;
     }
   }
 }
