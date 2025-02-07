@@ -33,8 +33,8 @@ const Asidebar = ({ isOpen, toggleSidebar }) => {
         </NavLink>
         <NavLink
         id="programs"
-        to="/learnskill"
-        className={location.pathname === '/learnskill/programs' ? 'Athis Alink' : 'Alink'}>
+        to="/learnskill/program"
+        className={location.pathname === '/learnskill/program' ? 'Athis Alink' : 'Alink'}>
           Программа обучения
         </NavLink>
         <NavLink

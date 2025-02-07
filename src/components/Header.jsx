@@ -19,7 +19,7 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
         return 'Лекции';
       case '/learnskill/useful':
         return 'Полезные материалы';
-      case '/learnskill/programs':
+      case '/learnskill/program':
         return 'Программа обучения';
       case '/learnskill/saved':
         return 'Записи вебинаров';
@@ -85,9 +85,9 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
           Полезные материалы
         </NavLink>
         <NavLink
-        id="programs"
-        to="/learnskill"
-        className={location.pathname === '/learnskill/programs' ? 'this link' : 'link'}>
+        id="program"
+        to="/learnskill/program"
+        className={location.pathname === '/learnskill/program' ? 'this link' : 'link'}>
           Программа обучения
         </NavLink>
         <NavLink
