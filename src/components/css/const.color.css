@@ -1,0 +1,11 @@
+:root {
+    --header: #232428;
+    --footer: #232428;
+    --main: #313338;
+    --card: #4d5057;
+    --font: #f5f5f5;
+    --error-message: #d63343;
+    --scroll-track: #f5f5f5;
+    --scroll-thumb: #313338;
+    --aside: #000;
+}

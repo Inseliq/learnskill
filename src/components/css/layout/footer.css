@@ -1,0 +1,10 @@
+footer.bottom {
+  max-width: 1440px;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--footer);
+  font-family: "Montserrat Alternates", serif;
+}

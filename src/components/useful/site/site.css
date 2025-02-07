@@ -1,0 +1,105 @@
+.DeepSeekPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  overflow-y: auto;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  padding: 5px;
+
+  & .main__content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: clamp(2rem, 1.6861rem + 1.4599vw, 3rem);
+
+    & .text__content {
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    & .img__content {
+      min-width: 325px;
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+
+      & img {
+        width: 325px;
+        height: 200px;
+      }
+    }
+
+    & .download {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      & a {
+        width: fit-content;
+        display: block;
+      }
+    }
+  }
+}
+
+.ChatGPTPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  overflow-y: auto;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  padding: 5px;
+
+  & .main__content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: clamp(2rem, 1.6861rem + 1.4599vw, 3rem);
+
+    & .text__content {
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    & .img__content {
+      min-width: 325px;
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+
+      & img {
+        width: 325px;
+        height: 200px;
+      }
+    }
+
+    & .download {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      & a {
+        width: fit-content;
+        display: block;
+      }
+    }
+  }
+}

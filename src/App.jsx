@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Lection from './components/Lection';
+import Useful from './components/Useful';
+import Politic from './components/Politic';
+import Lec1 from './components/lections/start/Lec1';
+import Lec5 from './components/lections/html_base/Lec5';
+import Pgm1 from './components/useful/program/Pgm1';
+import ChatGPT from './components/useful/site/ChatGPT';
+import DeepSeek from './components/useful/site/DeepSeek';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <Routes>
+        <Route path="/learnskill" element={<Home />} />
+        <Route path="/learnskill/lection" element={<Lection />} />
+        <Route path="/learnskill/useful" element={<Useful />} />
+        <Route path="/learnskill/politic" element={<Politic />} />
+        <Route path="/learnskill/lection/start/lec1" element={<Lec1 />} />
+        <Route path="/learnskill/lection/html/lec5" element={<Lec5 />} />
+        <Route path="/learnskill/useful/program/pgm1" element={<Pgm1 />} />
+        <Route path="/learnskill/useful/site/ChatGPT" element={<ChatGPT />} />
+        <Route path="/learnskill/useful/site/DeepSeek" element={<DeepSeek />} />
+      </Routes>
+  );
+};
 
-export default App
+export default App;

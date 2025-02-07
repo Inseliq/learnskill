@@ -1,0 +1,80 @@
+@media screen and (max-width: 950px) {
+  header.head {
+
+    & .header {
+      justify-content: space-around;
+    }
+
+    & #description {
+      display: none;
+    }
+
+    & .navbar {
+      display: none;
+    }
+
+    & .navbar-mobile {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 536px) {
+  #politic {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 435px) and (orientation: landscape) {
+    header.head {
+      justify-content: center;
+
+    & .header {
+      justify-content: space-around;
+    }
+
+    & #description {
+      display: block;
+    }
+
+    & .navbar {
+      display: none;
+    }
+
+    & .navbar-mobile {
+      display: none;
+    }
+  }
+
+  .asidebar-btn {
+    background: none;
+    border: none;
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .asidebar-btn::before,
+  .asidebar-btn span,
+  .asidebar-btn::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% - 2px);
+    width: 25px;
+    height: 3px;
+    background: whitesmoke;
+    transform-origin: 50% 50%;
+    border-radius: 5px;
+  }
+
+  .sidebar {
+    overflow-y: scroll;
+  }
+}

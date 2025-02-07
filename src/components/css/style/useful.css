@@ -1,0 +1,244 @@
+.usefulPage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+
+  & .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .useful-block {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    & .useful {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background: none;
+      border-radius: 10px;
+      border: 3px whitesmoke solid;
+      transition: 0.3s ease;
+
+      & .name {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+
+        & span {
+          font-size: clamp(1.25rem, 1.1715rem + 0.365vw, 1.5rem);
+          font-weight: 600;
+          width: 100%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          transition: 0.3s ease;
+        }
+        & span::before {
+          right: 10px;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          content: "➻";
+          transform: rotate(90deg);
+          width: 10px;
+          height: 10px;
+          transition: 0.3s ease;
+        }
+      }
+
+      & .content {
+        width: 100%;
+        display: none;
+        height: 0;
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        & .card-useful {
+          width: 300px;
+          height: 200px;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          transition: 0.3s all ease;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #00000080;
+            backdrop-filter: blur(2px);
+            border-radius: 10px;
+            transition: 0.3s all ease;
+          }
+
+          &:hover::before {
+            background: transparent;
+            backdrop-filter: blur(0px);
+          }
+
+          &:hover {
+            & .content-card-useful {
+              display: none;
+            }
+          }
+
+          &:active {
+            scale: 0.975;
+          }
+
+          & .content-card-useful {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            font-weight: 600;
+            transition: 0.3s all ease;
+            font-size: var(--card-font-default);
+          }
+        }
+
+        & .default {
+          background-image: url(../../assets/icon/other/locker-ico.png);
+        }
+
+        & .pgm-vs {
+          background-image: url(../../assets/img/visual-studio__img.jpg);
+        }
+
+        & .pgm-vsc {
+          background-image: url(../../assets/img/visual-studio-code__img.jpg);
+        }
+
+        & .figma {
+          background-image: url(../../assets/img/figma__img.jpg);
+        }
+
+        & .gh-desktop {
+          background-image: url(../../assets/img/github-desktop__img.jpg);
+        }
+
+        & .figma-com {
+          background-image: url(../../assets/img/figma-community__img.jpg);
+        }
+
+        & .dribbble {
+          background-image: url(../../assets/img/dribbble__img.jpg);
+        }
+
+        & .coolors {
+          background-image: url(../../assets/img/coolors__img.jpg);
+        }
+
+        & .icon-icons {
+          background-image: url(../../assets/img/icon-icons__img.jpg);
+        }
+
+        & .google-fonts {
+          background-image: url(../../assets/img/google-fonts__img.jpg);
+        }
+
+        & .grid-garden {
+          background-image: url(../../assets/img/grid-garden__img.jpg);
+        }
+
+        & .flexbox-froggy {
+          background-image: url(../../assets/img/flexbox-froggy__img.jpg);
+        }
+
+        & .css-gen {
+          background-image: url(../../assets/img/css-grid-generator__img.jpg);
+        }
+
+        & .pr-po {
+          background-image: url(../../assets/img/pr-po__img.jpg);
+        }
+
+        & .clamp-gen {
+          background-image: url(../../assets/img/clamp-gen__img.jpg);
+        }
+
+        & .deepseek {
+          background-image: url(../../assets/img/deepseek__img.jpg);
+        }
+
+        & .chat-gpt {
+          position: relative;
+          width: 300px;
+          height: 200px;
+          background-image: url(../../assets/img/chat-gpt__img.jpg);
+        }
+
+        & .star::before {
+          content: "★";
+          right: 9px;
+          color: gold;
+          top: 0;
+          position: absolute;
+          font-size: 32px;
+          display: block;
+        }
+      }
+    }
+
+    & .useful.open {
+      & .name {
+        border-bottom: 3px whitesmoke solid;
+
+        & span::before {
+          transform: rotate(-90deg);
+        }
+      }
+
+      & .content {
+        display: flex;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .lectionPage {
+    & .lection-block {
+        & .lection {
+            & .content {
+              justify-content: center;
+            }
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 395px) {
+    header.head {
+    & .navbar-mobile {
+        & h2 {
+          text-align: center;
+          font-size: clamp(0.96875rem, 0.8805rem + 0.4106vw, 1.25rem);
+        }
+    }
+  }
+}

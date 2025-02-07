@@ -1,0 +1,196 @@
+div.homePage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  overflow-y: auto;
+
+  & section.home__title {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    & h4 {
+      color: var(--error-message);
+    }
+
+    & h2 .anim {
+        background: linear-gradient(90deg, #61DAFB, #61fbf8, #61fbda, #affb83, #9dff64, #affb83, #61fbda, #61fbf8, #61DAFB);
+        background-size: 300% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: moveGradientLogo 4s linear infinite;
+        font-size: clamp(1.125rem, 1.0073rem + 0.5474vw, 1.5rem);
+        font-weight: 600;
+    }
+  }
+
+  & .card-block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+
+    & a.card {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transition: 0.3s all ease;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #00000080;
+        backdrop-filter: blur(2px);
+        border-radius: 10px;
+        transition: 0.3s all ease;
+      }
+
+      &:hover::before {
+        background: transparent;
+        backdrop-filter: blur(0px);
+      }
+
+      &:hover {
+        & .content-card {
+          font-size: var(--card-font-size);
+          font-weight: 700;
+        }
+      }
+
+      &:active {
+        scale: 0.975;
+      }
+
+      & div.content-card {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        font-weight: 600;
+        transition: 0.3s all ease;
+        font-size: var(--card-font-default);
+      }
+    }
+
+    & a.lection {
+      background-image: url(../../assets/img/lection_img.jpg);
+
+      &:hover {
+        & div.content-card {
+          margin-bottom: 20px;
+          background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff, #ffffff, #00bfff, #252525, #bcbcbc, #ffffff, #ffffff);
+          background-size: 300% 100%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          animation: moveGradientTextCard 1s linear;
+        }
+      }
+    }
+
+    & a.useful {
+      background-image: url(../../assets/img/useful_img.jpg);
+
+      &:hover {
+        & div.content-card {
+          margin-bottom: 50px;
+          background: linear-gradient(90deg, #000000, #000000, #000000, #000000, #ffc800, #ffc800, #ffc800, #ffffff, #ffffff);
+          background-size: 300% 100%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          animation: moveGradientTextCard 1s linear;
+        }
+      }
+    }
+
+    & a.programs {
+      background-image: url(../../assets/img/programs_img.jpg);
+
+      &:hover {
+        & div.content-card {
+          margin-bottom: 50px;
+          background: linear-gradient(90deg, #000000, #000000, #000000, #454545, #787878, #2300d3, #ffffff, #ffffff, #ffffff);
+          background-size: 300% 100%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          animation: moveGradientTextCard 1s linear;
+        }
+      }
+    }
+
+    & a.saved {
+      background-image: url(../../assets/img/saved_img.jpg);
+      &:hover {
+        & div.content-card {
+          margin-bottom: 150px;
+          background: linear-gradient(90deg, #ff6600, #ff6600, #ff6600, #ff6600, #17bc90, #75eaff, #858585, #ffffff, #ffffff);
+          background-size: 300% 100%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          animation: moveGradientTextCard 1s linear;
+        }
+      }
+    }
+
+    & a.questions {
+      background-image: url(../../assets/img/question_img.jpg);
+
+      &:hover {
+        & div.content-card {
+          margin-bottom: 70px;
+          background: linear-gradient(90deg, #000000, #000000, #000000, #000000, #00a772, #00a772, #00a772, #00a772, #3effc2);
+          background-size: 300% 100%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          animation: moveGradientTextCard 1s linear;
+        }
+      }
+    }
+
+    & a.schedule {
+      background-image: url(../../assets/img/schedule.jpg);
+
+      &:hover {
+        & div.content-card {
+          background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff, #ffffff, #4f4ae4, #61cdff, #139a13, #4ce70a, #1d9c18);
+          background-size: 300% 100%;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          animation: moveGradientTextCard 1s linear;
+        }
+      }
+    }
+  }
+}
+
+@keyframes moveGradientTextCard {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
