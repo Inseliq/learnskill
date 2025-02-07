@@ -1,8 +1,8 @@
 {
   "name": "learnskill",
   "private": true,
-  "homepage": "https://inseliq.github.io/learnskill",
-  "version": "0.0.0",
+  "homepage": "https://inseliq.github.io/learnskill/",
+  "version": "0.0.7",
   "type": "module",
   "scripts": {
     "dev": "vite",

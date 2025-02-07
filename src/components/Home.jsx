@@ -37,7 +37,7 @@ const Home = () => {
               </div>
             </NavLink>
             <NavLink
-            to="/learnskill"
+            to="/learnskill/saved"
             className="card saved">
               <div className="content-card">
                 Записи вебинаров

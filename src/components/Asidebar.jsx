@@ -15,8 +15,8 @@ const Asidebar = ({ isOpen, toggleSidebar }) => {
       <nav className="aside-bar__navbar">
         <NavLink
         id="lection"
-        to="/learnskill"
-        className={location.pathname === '/learnskill' ? 'Athis Alink' : 'Alink'}>
+        to="/learnskill/"
+        className={location.pathname === '/learnskill/' ? 'Athis Alink' : 'Alink'}>
           Главная
         </NavLink>
         <NavLink

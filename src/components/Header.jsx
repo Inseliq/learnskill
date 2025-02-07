@@ -47,7 +47,7 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
   return (
     <header className='head'>
       <section className="header">
-        <NavLink className="logo" to="/learnskill">
+        <NavLink className="logo" to="/learnskill/">
           <h1>LearnSkill</h1>
           <img src={logo} alt="logo-icon" className='animed-logo' />
         </NavLink>
@@ -92,7 +92,7 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
         </NavLink>
         <NavLink
         id="saved"
-        to="/learnskill"
+        to="/learnskill/saved"
         className={location.pathname === '/learnskill/saved' ? 'this link' : 'link'}>
           Записи вебинаров
         </NavLink>

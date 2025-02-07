@@ -1,0 +1,107 @@
+.SavedPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid whitesmoke;
+  overflow-y: auto;
+
+  & .main__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: clamp(2rem, 1.6861rem + 1.4599vw, 3rem);
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    & .card-video {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 0.3s all ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #00000080;
+        backdrop-filter: blur(2px);
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+
+      &:hover::before {
+        background: transparent;
+        backdrop-filter: blur(0px);
+      }
+
+      &:hover {
+        & .content-card-video-prehover {
+          display: none;
+        }
+
+        & .content-card-video-onhover {
+          display: flex;
+        }
+      }
+
+      &:active {
+        scale: 0.975;
+      }
+
+      & .content-card-video-onhover {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        transition: 0.3s ease all;
+
+        & .link-bg {
+          width: 64px;
+          height: 64px;
+          background: none;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        & .vk-video {
+          background-image: url();
+        }
+
+        & .youtube {
+          background-image: url();
+        }
+      }
+
+      & .content-card-video-prehover {
+        text-align: center;
+        display: none;
+        position: relative;
+        z-index: 1;
+        font-weight: 600;
+        transition: 0.3s all ease;
+        font-size: var(--card-font-default);
+      }
+    }
+
+    & .test-video {
+      background-image: url();
+    }
+  }
+}
