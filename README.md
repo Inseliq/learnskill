@@ -1,1 +1,1 @@
-# LearnSkill <- SkillVibe
+# LearnSkill
