@@ -5,7 +5,7 @@ import Footer from './Footer';
 import './css/root.css';
 import './css/layout/media.layout.css';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, extraClass }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
         `}>
       </div>
       <Asidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar}/>
-      <main className='main-content'>{children}</main>
+      <main className={`main-content ${extraClass || ''}`}>{children}</main>
       <footer className="color">
         <Footer />
       </footer>

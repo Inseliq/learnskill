@@ -1,0 +1,210 @@
+.QuestionPage {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  overflow-y: auto;
+  align-items: start;
+  justify-content: start;
+
+  & .f__1 {
+    & h4 {
+      color: #58a6ff;
+    }
+  }
+
+  & .f__2 {
+    & h4 {
+      color: #8758ff;
+    }
+  }
+
+  & .f__3 {
+    & h4 {
+      color: #58ffd8;
+    }
+  }
+
+  & button.aside-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 32px;
+    min-width: 32px;
+    width: clamp(2rem, 1.3723rem + 2.9197vw, 4rem);
+    height: clamp(2rem, 1.3723rem + 2.9197vw, 4rem);
+    max-width: 64px;
+    max-height: 64px;
+    border-radius: 100%;
+    background: #000;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease all;
+    z-index: 1;
+
+    & span.element {
+      opacity: 1;
+      transition: 0.2s ease all;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+        width: clamp(1.5rem, 1.3431rem + 0.7299vw, 2rem);
+        height: clamp(1.5rem, 1.3431rem + 0.7299vw, 2rem);
+        border: none;
+      }
+    }
+
+    &:hover::after {
+      transform: rotate(-135deg);
+      opacity: 1;
+    }
+
+    &:hover {
+      & span.element {
+        opacity: 0;
+      }
+
+      & .menu__content {
+        width: clamp(17.1875rem, 14.7354rem + 11.4051vw, 25rem);
+        height: 76vh;
+      }
+
+      & .head-menu__content,
+        .main-menu__content {
+          display: flex !important;
+      }
+    }
+
+    &::after {
+      z-index: 2;
+      opacity: 0;
+      transition: 0.2s ease all;
+      position: absolute;
+      transform: rotate(0deg);
+      content: "⇉";
+      background: linear-gradient(45deg, #00EF91, #00E2A2, #00D1BB, #00AFE8, #00AFE8);
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-size: clamp(1.5rem, 1.3431rem + 0.7299vw, 2rem);
+    }
+
+    & .menu__content {
+      max-width: 400px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      background: black;
+      transition: 0.5s all;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-direction: column;
+
+      & .head-menu__content,
+        .main-menu__content {
+          display: flex;
+          display: none;
+          transition: 0.5s ease all;
+      }
+
+      & .head-menu__content {
+        margin-top: 2vh;
+        justify-content: center;
+      }
+
+      & .main-menu__content {
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+
+        & .block-checkbox {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  & .main__content {
+    margin-top: clamp(2.125rem, 1.4973rem + 2.9197vw, 4.125rem);
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    & .quest__card {
+      width: 275px;
+      height: 190px;
+      background: #0d1117;
+      transition: 0.3s;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+
+      &:hover {
+        background: #161b22;
+      }
+
+      & .quest__icon {
+        font-size: 30px;
+      }
+
+      & .quest__text {
+        text-align: center;
+      }
+    }
+
+    & .startLearn {
+      border: 2px solid #58a6ff;
+
+      &:hover {
+        box-shadow: 0 0 15px #58a6ff;
+      }
+    }
+
+    & .htmlBase {
+      border: 2px solid #8758ff;
+
+      &:hover {
+        box-shadow: 0 0 15px #8758ff;
+      }
+    }
+
+    & .cssBase {
+      border: 2px solid #58ffd8;
+
+      &:hover {
+        box-shadow: 0 0 15px #58ffd8;
+      }
+    }
+  }
+}
+
+/* .quest__progress {
+  position: absolute;
+  bottom: 10px;
+  font-size: 14px;
+  background: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+} */
+
+

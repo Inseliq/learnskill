@@ -22,25 +22,7 @@ const Saved = () => {
               <div className="content-card-video-prehover">Вебинар $test</div>
               <div className="content-card-video-onhover">
                 <a href="#" target="_blank" rel="noopener noreferrer" className="link-bg"><img src={vkVideo} alt="vk-video" /></a>
-                <a href="" className="link-bg">
-                  <img src={youtube} alt="youtube" />
-                </a>
-              </div>
-            </div>
-            <div className="card-video test-video">
-              <div className="content-card-video-prehover">Вебинар $test</div>
-              <div className="content-card-video-onhover">
-                <a href="#" target="_blank" rel="noopener noreferrer" className="link-bg"><img src={vkVideo} alt="vk-video" /></a>
-                <a href="" className="link-bg">
-                  <img src={youtube} alt="youtube" />
-                </a>
-              </div>
-            </div>
-            <div className="card-video test-video">
-              <div className="content-card-video-prehover">Вебинар $test</div>
-              <div className="content-card-video-onhover">
-                <a href="#" target="_blank" rel="noopener noreferrer" className="link-bg"><img src={vkVideo} alt="vk-video" /></a>
-                <a href="" className="link-bg">
+                <a href="#" className="link-bg">
                   <img src={youtube} alt="youtube" />
                 </a>
               </div>

@@ -45,13 +45,13 @@ const Asidebar = ({ isOpen, toggleSidebar }) => {
         </NavLink>
         <NavLink
         id="question"
-        to="/learnskill"
+        to="/learnskill/question"
         className={location.pathname === '/learnskill/question' ? 'Athis Alink' : 'Alink'}>
           Задания
         </NavLink>
         <NavLink
         id="schedule"
-        to="/learnskill"
+        to="/learnskill/schedule"
         className={location.pathname === '/learnskill/schedule' ? 'Athis Alink' : 'Alink'}>
           Расписание вебинаров
         </NavLink>

@@ -30,7 +30,7 @@ const Home = () => {
               </div>
             </NavLink>
             <NavLink
-            to="/learnskill"
+            to="/learnskill/program"
             className="card programs">
               <div className="content-card">
                 Программа обучения
@@ -44,14 +44,14 @@ const Home = () => {
               </div>
             </NavLink>
             <NavLink
-            to="/learnskill"
+            to="/learnskill/question"
             className="card questions">
               <div className="content-card">
                 Задания
               </div>
             </NavLink>
             <NavLink
-            to="/learnskill"
+            to="/learnskill/schedule"
             className="card schedule">
               <div className="content-card">
                 Расписание вебинаров

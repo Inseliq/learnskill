@@ -17,7 +17,7 @@ const Useful = () => {
       <Layout>
         <div className="usefulPage">
           <section className="title">
-            Здесь собраны все лекции которые я буду писать
+            Тут я собрал все сайты, программы видео, которые использую сам ,')
           </section>
           <section className="useful-block">
             <button

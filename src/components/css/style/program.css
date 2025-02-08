@@ -1,0 +1,161 @@
+:root {
+  --index: calc(1vw + 1vh);
+	--text: #e7e7e0;
+	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+}
+
+.main-content.controleClass {
+  padding: 0 !important;
+}
+
+.ProgramPage {
+  width: 100%;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 0px !important;
+    display: none;
+  }
+
+  & .main-header {
+    position: relative;
+  }
+
+  & .main-header::after {
+	  content: '';
+	  position: absolute;
+	  z-index: 5;
+	  width: 100%;
+	  height: calc(var(--index) * 10);
+	  background-image: url(../../assets/img/layers/layer-ground.png);
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  bottom: calc(var(--index) * -4.5);
+  }
+
+  & .layers {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  & .layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    z-index: 2;
+  }
+
+  & .layers__base {
+    transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+    z-index: 0 !important;
+    background-image: url(../../assets/img/layers/layer-base.png);
+  }
+
+  & .layers__middle {
+  	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+    background-image: url(../../assets/img/layers/layer-middle.png);
+  }
+
+  & .layers__front {
+  	transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+    background-image: url(../../assets/img/layers/layer-front.png);
+  }
+
+  & .layer__header {
+	  z-index: 1;
+	  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+	  transition: var(--transition);
+	  will-change: transform;
+	  text-transform: uppercase;
+	  font-weight: 900;
+	  color: var(--text);
+	  text-shadow: 0 0 15px #9d822b;
+  }
+
+  & .layers__caption {
+	  margin-top: calc(var(--index) * -4);
+  }
+
+  & .main-article {
+  	--main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+    background-image: url(../../assets/img/layers/dungeon.jpg);
+  	min-height: 80vh;
+  	background-size: cover;
+  	background-position: center;
+  	color: var(--text);
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	position: relative;
+  	text-align: start;
+  	top: -1px;
+  	z-index: 4;
+  }
+
+  & .main-article__content {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 20px;
+    overflow-y: auto;
+    gap: 20px;
+    z-index: 6;
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      min-width: 300px;
+      flex: 1;
+
+      & h4 {
+        font-weight: 600;
+      }
+
+      & h4.mt {
+        margin-top: 15px;
+      }
+
+      & p {
+        margin-left: 6px;
+      }
+    }
+
+    & .block-left {
+      align-items: start;
+    }
+  }
+}
+
+@media screen and (max-width: 600.1px){
+  .ProgramPage {
+    & .main-article {
+      align-items: stretch;
+    }
+  }
+}
+
+@media screen and (max-width: 432px){
+  .ProgramPage {
+    & .main-article__content {
+      padding: 40px 20px 20px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape){
+  .ProgramPage {
+    & .layers__caption {
+	    margin-top: calc(var(--index) * -6);
+    }
+  }
+}

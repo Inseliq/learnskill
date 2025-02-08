@@ -55,13 +55,13 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
           <h2 id='description'>{getDescriptionText()}</h2>
         </div>
         <div className='service'>
-          <button id="themes" className='link-img'><img src={theme} alt="theme"></img></button>
+          {/* <button className="notification"></button> */}
           <NavLink
         id="preference"
         to="/learnskill/useful"
         className='link-img'>
           <img src={pref} alt="preference" />
-        </NavLink>
+          </NavLink>
           <button
             className={`asidebar-btn
             ${isSidebarOpen ? "active" : "unactive"}
@@ -98,13 +98,13 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
         </NavLink>
         <NavLink
         id="question"
-        to="/learnskill"
+        to="/learnskill/question"
         className={location.pathname === '/learnskill/question' ? 'this link' : 'link'}>
           Задания
         </NavLink>
         <NavLink
         id="schedule"
-        to="/learnskill"
+        to="/learnskill/schedule"
         className={location.pathname === '/learnskill/schedule' ? 'this link' : 'link'}>
           Расписание вебинаров
         </NavLink>

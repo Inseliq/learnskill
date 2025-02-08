@@ -32,24 +32,6 @@ const Lection = () => {
                 className="card-lections pref-pgm">
                   <div className="content-card-lections">Инструменты, программное обеспечение</div>
                 </NavLink>
-                <NavLink
-                id="lectionStart1"
-                to="/learnskill/lection"
-                className="card-lections locks">
-                  <div className="content-card-lections">Инструменты, программное обеспечение</div>
-                </NavLink>
-                <NavLink
-                id="lectionStart1"
-                to="/learnskill/lection"
-                className="card-lections locks">
-                  <div className="content-card-lections">Инструменты, программное обеспечение</div>
-                </NavLink>
-                <NavLink
-                id="lectionStart1"
-                to="/learnskill/lection"
-                className="card-lections locks">
-                  <div className="content-card-lections">Инструменты, программное обеспечение</div>
-                </NavLink>
               </main>
             </button>
             <button
