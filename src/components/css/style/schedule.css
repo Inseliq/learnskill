@@ -66,6 +66,7 @@
 @media (max-width: 720px) {
   .SchedulePage {
     width: 100%;
+    align-items: start;
 
     & .table {
       display: block;

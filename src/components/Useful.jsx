@@ -161,6 +161,21 @@ const Useful = () => {
                 </NavLink>
               </main>
             </button>
+            <button
+            className={`useful
+            ${openButtonID === 'usefulSite' ? 'open' : ''}`}>
+              <article className="name" onClick={() => handleArticleClickID('usefulSite')}>
+                <span>4. Готовые сайты</span>
+              </article>
+              <main className="content">
+                <NavLink
+                id="usefulVideo1"
+                to="/learnskill/useful"
+                className="card-useful default">
+                  <div className="content-card-useful">Видеваааоаоа</div>
+                </NavLink>
+              </main>
+            </button>
           </section>
         </div>
       </Layout>

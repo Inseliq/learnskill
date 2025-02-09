@@ -27,7 +27,31 @@ const Schedule = () => {
                 <td data-label="Тип">Урок</td>
                 <td data-label="Дата проведения">09.02.2025</td>
                 <td data-label="Время проведения">11:00</td>
+                <td data-label="Статус">Проведён</td>
+              </tr>
+              <tr>
+                <td data-label="№">2</td>
+                <td data-label="Название">Работа с HTML</td>
+                <td data-label="Тип">Урок</td>
+                <td data-label="Дата проведения">16.02.2025</td>
+                <td data-label="Время проведения">10:00</td>
                 <td data-label="Статус">Ожидание</td>
+              </tr>
+              <tr>
+                <td data-label="№">3</td>
+                <td data-label="Название">Работа с CSS</td>
+                <td data-label="Тип">Урок</td>
+                <td data-label="Дата проведения">23.02.2025</td>
+                <td data-label="Время проведения">10:00</td>
+                <td data-label="Статус">Запланирован</td>
+              </tr>
+              <tr>
+                <td data-label="№">4</td>
+                <td data-label="Название">Медиа запросы</td>
+                <td data-label="Тип">Урок</td>
+                <td data-label="Дата проведения">02.03.2025</td>
+                <td data-label="Время проведения">10:00</td>
+                <td data-label="Статус">Запланирован</td>
               </tr>
             </tbody>
           </table>

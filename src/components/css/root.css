@@ -141,8 +141,10 @@ footer.color {
 
 .back-link {
   position: absolute;
-  width: clamp(2rem, 1.6861rem + 1.4599vw, 3rem);
-  height: clamp(2rem, 1.6861rem + 1.4599vw, 3rem);
+  top: 0;
+  left: 0;
+  width: clamp(2rem, 1.3723rem + 2.9197vw, 4rem);
+  height: clamp(2rem, 1.3723rem + 2.9197vw, 4rem);
   background-image: url(../assets/icon/other/back-arrow_ico.png);
   background-size: cover;
   background-position: center;

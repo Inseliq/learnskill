@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
-import Layout from './Layout';
-import useDocumentTitle from './huks.js/useDocumentTitle';
-import filterIco from './assets/icon/other/filter-ico.png';
-import './css/style/question.css';
-import Checkbox from './Checkbox';
+import Layout from '../Layout';
+import useDocumentTitle from '../huks.js/useDocumentTitle';
+import filterIco from '../assets/icon/other/filter-ico.png';
+import '../css/style/question.css';
+import Checkbox from '../Checkbox';
 
-function Question() {
-  useDocumentTitle('Задания');
+function GTask1() {
+  useDocumentTitle('Добрый друг');
 
   const [selectedFilters, setSelectedFilters] = useState([]);
 
@@ -18,13 +18,17 @@ function Question() {
   };
 
   const filters = [
-    { id: 'globalTask1', className: 'f__1', label: 'Добрый друг' },
-    { id: 'globalTask2', className: 'f__2', label: 'Весёлая масленица' },
+    { id: 'installApp', className: 'f__1', label: 'Работа с программами' },
+    { id: 'html', className: 'f__2', label: 'HTML' },
   ];
 
   const contentItems = [
-  { id: 1, className: "globalTask1", text: "Добрый друг", link: "/learnskill/question/task1", icon: "🐶" },
-  { id: 2, className: "globalTask2", text: "Весёлая масленица", link: "/learnskill/question", icon: "🥞" },
+  { id: 1, className: "installApp", text: "Программное обеспечение", link: "/learnskill/question/task1/quest1", icon: "🛠" },
+  { id: 2, className: "installApp", text: "GitHub Desktop", link: "/learnskill/question/task1", icon: "🧩" },
+  { id: 3, className: "installApp", text: "VSC Расширения", link: "/learnskill/question/task1", icon: "📁" },
+  { id: 4, className: "installApp", text: "GitHub Pages", link: "/learnskill/question/task1", icon: "🌍" },
+  { id: 5, className: "installApp", text: "Структурирование файлов", link: "/learnskill/question/task1", icon: "📚" },
+  { id: 5, className: "html", text: "Написание шапки и подвала сайта", link: "/learnskill/question/task1", icon: "</>" },
   ];
 
 
@@ -49,6 +53,11 @@ function Question() {
             </div>
           </div>
         </button>
+        <NavLink
+        id="lection"
+        to="/learnskill/question"
+        className="back-link">
+        </NavLink>
         <div className="main__content">
           {contentItems.map(({ id, className, text, link, icon }) =>
             selectedFilters.length === 0 || selectedFilters.includes(className) ? (
@@ -64,4 +73,4 @@ function Question() {
   );
 }
 
-export default Question;
+export default GTask1;

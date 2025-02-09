@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import logo from './assets/icon/logo/logo.svg';
-import theme from './assets/icon/other/themes-icon.png'
-import pref from './assets/icon/other/preference-icon.png'
+import pref from './assets/icon/other/preference-icon.png';
 
 const Header = ({toggleSidebar, isSidebarOpen}) => {
   const location = useLocation();
@@ -35,6 +34,10 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
         return '$name';
       case '/learnskill/useful/program/pgm1':
         return '$name';
+      case '/learnskill/question/task1':
+        return 'Добрый друг';
+      case '/learnskill/question/task1/quest1':
+        return 'Программное обеспечение';
       case '/learnskill/useful/site/ChatGPT':
         return 'О ChatGPT';
       case '/learnskill/useful/site/DeepSeek':

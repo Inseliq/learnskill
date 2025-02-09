@@ -8,6 +8,14 @@
   align-items: start;
   justify-content: start;
 
+  & .back-link {
+    margin-left: clamp(2.25rem, 1.6223rem + 2.9197vw, 4.25rem);
+  }
+
+  & .back-link.no_margin {
+    margin-left: 0;
+  }
+
   & .f__1 {
     & h4 {
       color: #58a6ff;
@@ -23,6 +31,12 @@
   & .f__3 {
     & h4 {
       color: #58ffd8;
+    }
+  }
+
+  & .f__4 {
+    & h4 {
+      color: #ffffff;
     }
   }
 
@@ -171,7 +185,7 @@
       }
     }
 
-    & .startLearn {
+    /* & .startLearn {
       border: 2px solid #58a6ff;
 
       &:hover {
@@ -193,7 +207,67 @@
       &:hover {
         box-shadow: 0 0 15px #58ffd8;
       }
+    } */
+
+    & .globalTask1 {
+      position: relative;
+      border: 2px solid #58a6ff;
+
+      &:hover {
+        box-shadow: 0 0 15px #58a6ff;
+      }
+
+      &::after {
+        position: absolute;
+        content: "★";
+        top: 0;
+        right: 10px;
+        font-size: 32px;
+        color: gold;
+        text-shadow: 0 0 15px gold;
+        background: none;
+      }
     }
+
+    & .installApp {
+      position: relative;
+      border: 2px solid #58a6ff;
+
+      &:hover {
+        box-shadow: 0 0 15px #58a6ff;
+      }
+    }
+
+    & .html {
+      position: relative;
+      border: 2px solid #8758ff;
+
+      &:hover {
+        box-shadow: 0 0 15px #8758ff;
+      }
+    }
+
+    & .globalTask2 {
+      position: relative;
+      border: 2px solid #8758ff;
+
+      &:hover {
+        box-shadow: 0 0 15px #8758ff;
+      }
+
+      &::after {
+        position: absolute;
+        content: "★";
+        top: 0;
+        right: 10px;
+        font-size: 32px;
+        color: gold;
+        text-shadow: 0 0 15px gold;
+        background: none;
+      }
+    }
+
+
   }
 }
 
@@ -207,4 +281,11 @@
   border-radius: 20px;
 } */
 
+@media screen and (max-width: 625px) {
+  .QuestionPage {
+    & .main__content {
+      justify-content: center;
+    }
+  }
+}
 
