@@ -185,30 +185,6 @@
       }
     }
 
-    /* & .startLearn {
-      border: 2px solid #58a6ff;
-
-      &:hover {
-        box-shadow: 0 0 15px #58a6ff;
-      }
-    }
-
-    & .htmlBase {
-      border: 2px solid #8758ff;
-
-      &:hover {
-        box-shadow: 0 0 15px #8758ff;
-      }
-    }
-
-    & .cssBase {
-      border: 2px solid #58ffd8;
-
-      &:hover {
-        box-shadow: 0 0 15px #58ffd8;
-      }
-    } */
-
     & .globalTask1 {
       position: relative;
       border: 2px solid #58a6ff;
@@ -247,6 +223,15 @@
       }
     }
 
+    & .css {
+      position: relative;
+      border: 2px solid #58ffd8;
+
+      &:hover {
+        box-shadow: 0 0 15px #58ffd8;
+      }
+    }
+
     & .globalTask2 {
       position: relative;
       border: 2px solid #8758ff;
@@ -269,17 +254,45 @@
 
 
   }
-}
 
-/* .quest__progress {
-  position: absolute;
-  bottom: 10px;
-  font-size: 14px;
-  background: #4caf50;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 20px;
-} */
+  & .text-task {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+
+    & ol {
+      margin-top: 10px;
+    }
+
+    & ol li {
+      margin-left: 22px;
+    }
+
+    & li.coments {
+      list-style-type: none;
+      color: gray;
+      margin-left: 0;
+    }
+  }
+
+  & .task2 {
+    align-items: start;
+
+    & .link::after {
+      background-color: #ff6363;
+    }
+  }
+
+  & .task5 {
+    & #ctrl-view {
+      margin-top: 10px;
+    }
+  }
+
+  & .color.red {
+    color: #ff6363;
+  }
+}
 
 @media screen and (max-width: 625px) {
   .QuestionPage {

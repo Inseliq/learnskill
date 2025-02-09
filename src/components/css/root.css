@@ -143,6 +143,10 @@ footer.color {
   position: absolute;
   top: 0;
   left: 0;
+  min-width: 32px;
+  min-height: 32px;
+  max-width: 64px;
+  max-height: 64px;
   width: clamp(2rem, 1.3723rem + 2.9197vw, 4rem);
   height: clamp(2rem, 1.3723rem + 2.9197vw, 4rem);
   background-image: url(../assets/icon/other/back-arrow_ico.png);
@@ -162,6 +166,88 @@ footer.color {
     scale: 0.975;
   }
 }
+
+.view.console.bash {
+  display: flex;
+  min-width: 275px;
+  max-width: 900px;
+  width: 100%;
+  flex-direction: column;
+  background: black;
+  border: 1px #fff solid;
+  border-radius: 10px;
+  overflow: hidden;
+
+  & samp {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: #2f2f2f;
+
+    & h6 {
+      font-size: clamp(0.5rem, 0.3823rem + 0.5474vw, 0.875rem);
+      color: #acacac;
+    }
+
+    & .btn-copy {
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        color: whitesmoke;
+      }
+    }
+  }
+
+  & code {
+    width: 100%;
+    padding: 10px;
+
+    & pre {
+      font-size: clamp(0.625rem, 0.5073rem + 0.5474vw, 1rem);
+    }
+  }
+}
+
+.custom-alert {
+  position: fixed;
+  top: 2vh;
+  right: 50%;
+  transform: translate(50%);
+  background: #000;
+  padding: 5px 10px;
+  border-radius: 25px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 15;
+
+  & .ico-success {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+  }
+
+  & .ico-success::after {
+    position: relative;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url(../assets/icon/other/success.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 15;
+  }
+}
+
+.custom-alert.show {
+  opacity: 1;
+}
+
 
 ::-webkit-scrollbar {
   width: 10px;

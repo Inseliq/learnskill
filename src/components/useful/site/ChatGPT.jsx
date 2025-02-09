@@ -12,7 +12,6 @@ const ChatGPT = () => {
       <Layout>
         <div className="ChatGPTPage">
           <NavLink
-          id="backLink"
           to="/learnskill/useful"
           className="back-link">
           </NavLink>

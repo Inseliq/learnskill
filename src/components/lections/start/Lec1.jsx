@@ -10,7 +10,6 @@ const Lec1 = () => {
       <Layout>
         <div className="LectionPages">
           <NavLink
-          id="lection"
           to="/learnskill/lection"
           className="back-link">
             <div className="content-card-lections">К лекциям</div>

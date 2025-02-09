@@ -13,7 +13,6 @@ const DeepSeek = () => {
       <Layout>
         <div className="DeepSeekPage">
           <NavLink
-          id="backLink"
           to="/learnskill/useful"
           className="back-link">
           </NavLink>

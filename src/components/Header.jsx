@@ -38,6 +38,14 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
         return 'Добрый друг';
       case '/learnskill/question/task1/quest1':
         return 'Программное обеспечение';
+      case '/learnskill/question/task1/quest2':
+        return 'GitHub Desktop';
+      case '/learnskill/question/task1/quest3':
+        return 'VSC Расширения';
+      case '/learnskill/question/task1/quest4':
+        return 'GitHub Pages';
+      case '/learnskill/question/task1/quest5':
+        return 'Структурирование файлов';
       case '/learnskill/useful/site/ChatGPT':
         return 'О ChatGPT';
       case '/learnskill/useful/site/DeepSeek':

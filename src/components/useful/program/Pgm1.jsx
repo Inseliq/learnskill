@@ -10,7 +10,6 @@ const Pgm1 = () => {
       <Layout>
         <div className="LectionPages">
           <NavLink
-          id="useful"
           to="/learnskill/useful"
           className="back-link">
             <div className="content-card-lections">К материалам</div>
