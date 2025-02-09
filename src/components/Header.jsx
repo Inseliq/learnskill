@@ -46,6 +46,8 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
         return 'GitHub Pages';
       case '/learnskill/question/task1/quest5':
         return 'Структурирование файлов';
+      case '/learnskill/question/task1/quest6':
+        return 'HTML вёрстка';
       case '/learnskill/useful/site/ChatGPT':
         return 'О ChatGPT';
       case '/learnskill/useful/site/DeepSeek':

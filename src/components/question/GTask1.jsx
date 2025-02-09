@@ -19,8 +19,8 @@ function GTask1() {
 
   const filters = [
     { id: 'installApp', className: 'f__1', label: 'Работа с программами' },
-    { id: 'html', className: 'f__2', label: 'HTML' },
-    { id: 'css', className: 'f__3', label: 'CSS' },
+    { id: 'html', className: 'f__2', label: 'HTML вёрстка' },
+    { id: 'css', className: 'f__3', label: 'CSS вёрстка' },
   ];
 
   const contentItems = [
@@ -29,8 +29,8 @@ function GTask1() {
   { id: 3, className: "installApp", text: "VSC Расширения", link: "/learnskill/question/task1/quest3", icon: "📁" },
   { id: 4, className: "installApp", text: "GitHub Pages", link: "/learnskill/question/task1/quest4", icon: "🌍" },
   { id: 5, className: "installApp", text: "Структурирование файлов", link: "/learnskill/question/task1/quest5", icon: "📚" },
-  { id: 6, className: "html", text: "Написание шапки и подвала сайта", link: "/learnskill/question/task1", icon: "</>" },
-  { id: 7, className: "css", text: "Стили для шапки и футера", link: "/learnskill/question/task1", icon: "🎨" },
+  { id: 6, className: "html", text: "Написание шапки и подвала сайта", link: "/learnskill/question/task1/quest6", icon: "</>" },
+  { id: 7, className: "css", text: "Стили для шапки и футера", link: "/learnskill/question/task1/quest", icon: "🎨" },
   ];
 
 

@@ -16,28 +16,10 @@ const Task6 = () => {
           </NavLink>
           <div className="main__content">
             <div className="text-task">
-              <h2>Расширения для Visual Studio Code</h2>
+              <h2>Создание шапки и подвала</h2>
               <ol>
                 <li>
-                  Git Graph
-                </li>
-                <li className='color red'>
-                  Live Server
-                </li>
-                <li className='color red'>
-                  HTML CSS Support
-                </li>
-                <li>
-                  vscode-icons
-                </li>
-                <li>
-                  HTML Boilerplate
-                </li>
-                <li className='color red'>
-                  HTML to CSS autocompletion
-                </li>
-                <li>
-                  HTML/CSS/JavaScript Snippets
+                  //stop$$
                 </li>
               </ol>
             </div>

@@ -12,6 +12,7 @@ import Task2 from './components/question/global/Task2';
 import Task3 from './components/question/global/Task3';
 import Task4 from './components/question/global/Task4';
 import Task5 from './components/question/global/Task5';
+import Task6 from './components/question/global/Task6';
 import GTask1 from './components/question/GTask1';
 import ChatGPT from './components/useful/site/ChatGPT';
 import DeepSeek from './components/useful/site/DeepSeek';
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/learnskill/question/task1/quest3" element={<Task3 />} />
         <Route path="/learnskill/question/task1/quest4" element={<Task4 />} />
         <Route path="/learnskill/question/task1/quest5" element={<Task5 />} />
+        <Route path="/learnskill/question/task1/quest6" element={<Task6 />} />
         <Route path="/learnskill/question/task1" element={<GTask1 />} />
         <Route path="/learnskill/useful/site/ChatGPT" element={<ChatGPT />} />
         <Route path="/learnskill/useful/site/DeepSeek" element={<DeepSeek />} />
