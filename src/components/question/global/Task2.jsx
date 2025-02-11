@@ -2,10 +2,15 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Layout from '../../Layout';
 import useDocumentTitle from '../../huks.js/useDocumentTitle';
+import NextBtn from '../../NextBtn';
+import LecBtn from '../../LecBtn';
 
 
 const Task2 = () => {
   useDocumentTitle('GitHub Desktop');
+
+  const path = '/learnskill/question/task1/quest3';
+  const path_lec = '/learnskill/useful/program/pgm4';
 
   return (
       <Layout>
@@ -14,6 +19,8 @@ const Task2 = () => {
           to="/learnskill/question/task1"
           className="back-link no_margin">
           </NavLink>
+          <NextBtn path = {path} />
+          <LecBtn path_lec = {path_lec}/>
           <div className="main__content">
             <div className="text-task task2">
               <h2>Приложение GitHub Desktop</h2>

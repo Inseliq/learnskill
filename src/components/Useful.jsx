@@ -36,19 +36,19 @@ const Useful = () => {
                 </NavLink>
                 <NavLink
                 id="programVSC"
-                to="/learnskill/useful"
+                to="/learnskill/useful/program/pgm2"
                 className="card-useful pgm-vsc">
                   <div className="content-card-useful">Visual Studio Code</div>
                 </NavLink>
                 <NavLink
                 id="program"
-                to="/learnskill/useful"
+                to="/learnskill/useful/program/pgm3"
                 className="card-useful figma">
                   <div className="content-card-useful">Figma</div>
                 </NavLink>
                 <NavLink
                 id="program"
-                to="/learnskill/useful"
+                to="/learnskill/useful/program/pgm4"
                 className="card-useful gh-desktop">
                   <div className="content-card-useful">GitHub Desktop</div>
                 </NavLink>

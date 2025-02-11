@@ -3,10 +3,15 @@ import { NavLink } from 'react-router-dom';
 import Layout from '../../Layout';
 import useDocumentTitle from '../../huks.js/useDocumentTitle';
 import Console from '../../Console';
+import NextBtn from '../../NextBtn';
+import LecBtn from '../../LecBtn';
 
 
 const Task5 = () => {
-  useDocumentTitle('GitHub Pages');
+  useDocumentTitle('Структурирование файлов');
+
+  const path = '/learnskill/question/task1/quest6';
+  const path_lec = '/learnskill/lection/start/lec2';
 
   const consoles = [
     {
@@ -41,6 +46,8 @@ const Task5 = () => {
           to="/learnskill/question/task1"
           className="back-link no_margin">
           </NavLink>
+          <NextBtn path = {path} />
+          <LecBtn path_lec = {path_lec}/>
           <div className="main__content task5">
             <div className="text-task">
               <h2>Структурирование файлов</h2>

@@ -30,10 +30,16 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
         return 'Политика конфиденциальности';
       case '/learnskill/lection/start/lec1':
         return 'Инструменты, программное обеспечение';
-      case '/learnskill/lection/html/lec5':
+      case '/learnskill/lection/html/lec1':
         return '$name';
       case '/learnskill/useful/program/pgm1':
-        return '$name';
+        return 'Программа "Visual Studio"';
+      case '/learnskill/useful/program/pgm2':
+        return 'Программа "Visual Studio Code"';
+      case '/learnskill/useful/program/pgm3':
+        return 'Программа ""';
+      case '/learnskill/useful/program/pgm4':
+        return 'Программа ""';
       case '/learnskill/question/task1':
         return 'Добрый друг';
       case '/learnskill/question/task1/quest1':
@@ -48,6 +54,18 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
         return 'Структурирование файлов';
       case '/learnskill/question/task1/quest6':
         return 'HTML вёрстка';
+      case '/learnskill/question/task1/quest7':
+        return 'CSS вёрстка';
+      case '/learnskill/question/task1/quest8':
+        return 'CSS вёрстка';
+      case '/learnskill/question/task1/quest9':
+        return 'CSS вёрстка';
+      case '/learnskill/question/task1/quest10':
+        return 'CSS вёрстка';
+      case '/learnskill/question/task1/quest11':
+        return 'HTML вёрстка';
+      case '/learnskill/question/task1/home1':
+        return 'Проверка ДЗ';
       case '/learnskill/useful/site/ChatGPT':
         return 'О ChatGPT';
       case '/learnskill/useful/site/DeepSeek':

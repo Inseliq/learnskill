@@ -2,10 +2,15 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Layout from '../../Layout';
 import useDocumentTitle from '../../huks.js/useDocumentTitle';
+import NextBtn from '../../NextBtn';
+import LecBtn from '../../LecBtn';
 
 
 const Task1 = () => {
   useDocumentTitle('Программное обеспечение');
+
+  const path = '/learnskill/question/task1/quest2';
+  const path_lec = '/learnskill/lection/start/lec1';
 
   return (
       <Layout>
@@ -14,6 +19,8 @@ const Task1 = () => {
           to="/learnskill/question/task1"
           className="back-link no_margin">
           </NavLink>
+          <NextBtn path = {path} />
+          <LecBtn path_lec = {path_lec}/>
           <div className="main__content">
             <div className="text-task">
               <h2>Что необходимо установить для удобной работы с проектом</h2>

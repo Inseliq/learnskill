@@ -27,10 +27,14 @@ const Lection = () => {
               </article>
               <main className="content">
                 <NavLink
-                id="lectionStart1"
                 to="/learnskill/lection/start/lec1"
                 className="card-lections pref-pgm">
                   <div className="content-card-lections">Инструменты, программное обеспечение</div>
+                </NavLink>
+                <NavLink
+                to="/learnskill/lection/start/lec2"
+                className="card-lections structure">
+                  <div className="content-card-lections">Струкртура проекта (файлов)</div>
                 </NavLink>
               </main>
             </button>
@@ -42,10 +46,43 @@ const Lection = () => {
               </article>
               <main className="content">
                 <NavLink
-                id="lectionStart1"
-                to="/learnskill/lection/html/lec5"
+                to="/learnskill/lection/html/lec1"
                 className="card-lections locks">
-                  <div className="content-card-lections">Инструменты, программное обеспечение</div>
+                  <div className="content-card-lections">Создание шапки и подвала сайта</div>
+                </NavLink>
+                <NavLink
+                to="/learnskill/lection/html/lec2"
+                className="card-lections locks">
+                  <div className="content-card-lections">Подключение css к html</div>
+                </NavLink>
+              </main>
+            </button>
+            <button
+            className={`lection
+            ${openButtonId === 'lectionCSS' ? 'open' : ''}`}>
+              <article className="name" onClick={() => handleArticleClick('lectionCSS')}>
+                <span>3. CSS База</span>
+              </article>
+              <main className="content">
+                <NavLink
+                to="/learnskill/lection/css/lec1"
+                className="card-lections locks">
+                  <div className="content-card-lections">Работа с шапкой и подвалом</div>
+                </NavLink>
+                <NavLink
+                to="/learnskill/lection/html/lec2"
+                className="card-lections locks">
+                  <div className="content-card-lections">Работа с шрифтами</div>
+                </NavLink>
+                <NavLink
+                to="/learnskill/lection/html/lec2"
+                className="card-lections locks">
+                  <div className="content-card-lections">Работа с цветами</div>
+                </NavLink>
+                <NavLink
+                to="/learnskill/lection/html/lec2"
+                className="card-lections locks">
+                  <div className="content-card-lections">Стилизация шапки</div>
                 </NavLink>
               </main>
             </button>

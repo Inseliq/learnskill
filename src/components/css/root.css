@@ -3,13 +3,23 @@
 @import url(./const.color.css);
 @import url(./fonts.css);
 
+:root {
+  --index: calc(1vh + 1vw);
+  /* --progress: 70%; */
+}
+
 * {
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
+
+.link
+
+.link.blue
 
 html, body {
   display: flex;
@@ -141,8 +151,6 @@ footer.color {
 
 .back-link {
   position: absolute;
-  top: 0;
-  left: 0;
   min-width: 32px;
   min-height: 32px;
   max-width: 64px;
@@ -165,6 +173,31 @@ footer.color {
   &:active {
     scale: 0.975;
   }
+}
+
+.back-link.lec {
+  text-align: center;
+  background: wheat;
+  border-radius: 100%;
+  font-size: clamp(1.5rem, 1.0292rem + 2.1898vw, 3rem);
+  background: linear-gradient(45deg, #61DAFB, #61fbf8, #61fbda, #affb83, #9dff64, #affb83, #61fbda, #61fbf8, #61DAFB);
+  background-size: 300% 100%;
+  animation: moveGradientLogo 4s linear infinite;
+}
+
+.back-link.next {
+  background: blueviolet;
+  margin-left: 0 !important;
+  font-family: "Fontdiner Swanky", serif;
+  font-size: clamp(0.75rem, 0.6323rem + 0.5474vw, 1.125rem);
+  min-height: 24px;
+  max-height: 32px;
+  min-width: 48px;
+  max-width: 72px;
+  height: clamp(1rem, 0.6861rem + 1.4599vw, 2rem);
+  border-radius: 10px;
+  right: 3%;
+  top: clamp(0.75rem, 0.5146rem + 1.0949vw, 1.5rem);
 }
 
 .view.console.bash {
@@ -207,7 +240,12 @@ footer.color {
     padding: 10px;
 
     & pre {
+      overflow-x: auto;
       font-size: clamp(0.625rem, 0.5073rem + 0.5474vw, 1rem);
+
+      &::-webkit-scrollbar {
+        height: 5px;
+      }
     }
   }
 }
@@ -262,4 +300,169 @@ footer.color {
   background: var(--scroll-thumb);
   border-radius: 25px;
   border: 1px solid var(--scroll-track);
+}
+
+.video-player {
+  position: relative;
+  max-width: 900px;
+  min-height: 275px;
+  display: flex;
+  background: black;
+  overflow: hidden;
+  border-radius: 8px;
+
+
+  & .video-element {
+    width: 100%;
+    display: block;
+  }
+
+  & .controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2px 20px;
+    box-sizing: border-box;
+
+    & .progress {
+      width: 100%;
+      height: clamp(0.3125rem, 0.2144rem + 0.4562vw, 0.625rem);
+    }
+
+    & .other-bar {
+      position: relative;
+      align-items: center;
+      display: flex;
+      gap: 10px;
+
+      & .volume-control {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+
+    & .play {
+      font-size: clamp(0.875rem, 0.6004rem + 1.2774vw, 1.75rem);
+    }
+
+    & .volume {
+      width: clamp(1rem, 0.6861rem + 1.4599vw, 2rem);
+      font-size: clamp(0.875rem, 0.6004rem + 1.2774vw, 1.75rem);
+    }
+
+    & .screen {
+      position: absolute;
+      right: 0;
+      transform: rotate(45deg);
+      font-size: clamp(0.875rem, 0.6004rem + 1.2774vw, 1.75rem);
+    }
+
+    & .progress-control {
+      & span {
+        font-size: clamp(0.5rem, 0.3038rem + 0.9124vw, 1.125rem);
+      }
+    }
+  }
+
+  & .start-button {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-image: url(../assets/icon/other/plau__icon.png);
+    z-index: 20;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  & .controls button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+ &.controls input[type="range"] {
+    vertical-align: middle;
+  }
+
+}
+
+#volume {
+  height: 5px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #a2a2a235;
+  width: clamp(4.6875rem, 3.7067rem + 4.562vw, 7.8125rem);
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s;
+}
+
+#volume::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #dcdcdc var(--progress), #a2a2a235 var(--progress));
+  border-radius: 5px;
+}
+
+#volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+#time-progress {
+  height: 5px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #a2a2a235;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s;
+}
+
+#time-progress::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #ff0000 var(--time-progress), #a2a2a235 var(--time-progress));
+  border-radius: 5px;
+}
+
+#time-progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #ff0000;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .video-player {
+  max-width: 750px;
+  max-height: calc(100vh - 20vh - 10px);
+  }
 }

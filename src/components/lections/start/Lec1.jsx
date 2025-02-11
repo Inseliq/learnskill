@@ -8,14 +8,34 @@ const Lec1 = () => {
 
   return (
       <Layout>
-        <div className="LectionPages">
+        <div className="LectionPage">
           <NavLink
           to="/learnskill/lection"
-          className="back-link">
-            <div className="content-card-lections">К лекциям</div>
+          className="back-link back">
           </NavLink>
-          <h1>Основной контент</h1>
-          <h5>Инструменты, программное обеспечение</h5>
+          <main className="main_content">
+            <h2>Инструменты, программное обеспечение</h2>
+            <ol>
+              <li>
+                <NavLink to='/learnskill/useful/program/pgm1' className='link'>Гайд по Visual Studio</NavLink>
+              </li>
+              <li>
+                <NavLink to='/learnskill/useful/program/pgm2' className='link'>Гайд по Visual Studio Code</NavLink>
+              </li>
+              <li>
+                <NavLink to='/learnskill/useful/program/pgm3' className='link'>Гайд по Figma</NavLink>
+              </li>
+              <li>
+                <NavLink to='/learnskill/useful/program/pgm4' className='link'>Гайд по GitHub Desktop</NavLink>
+              </li>
+              <li>
+                Discord Desktop - мы будем использовать для более удобной связи с вами.
+                <p>Там есть задания, расписание тем, вопросы по обучению (любые вопросы которые вы можете задать мне), полезные материалы, ну и просто чатик где мы можем пообщаться о чём захотим.</p>
+                <p className="color red">Добавьте свои репозитории github и gh-pages во вкладку git-hubs</p>
+                <p><a href='' className='link'>Скачать Discord Desktop</a></p>
+              </li>
+            </ol>
+          </main>
         </div>
       </Layout>
   );

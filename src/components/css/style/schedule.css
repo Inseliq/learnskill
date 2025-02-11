@@ -63,7 +63,7 @@
   }
 }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 720px) {
   .SchedulePage {
     width: 100%;
     align-items: start;
