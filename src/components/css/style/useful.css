@@ -191,6 +191,18 @@
           background-image: url(../../assets/img/chat-gpt__img.jpg);
         }
 
+        & .web-symbols {
+          background-image: url(../../assets/img/web-symbols.png);
+        }
+
+        & .drug {
+          background-image: url(../../assets/img/screen/saved_11.jpg);
+        }
+
+        & .youtube {
+          background-image: url(../../assets/img/youtube.jpg);
+        }
+
         & .star::before {
           content: "★";
           right: 9px;

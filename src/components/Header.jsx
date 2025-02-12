@@ -30,16 +30,20 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
         return 'Политика конфиденциальности';
       case '/learnskill/lection/start/lec1':
         return 'Инструменты, программное обеспечение';
+      case '/learnskill/lection/start/lec2':
+        return 'Структура проекта (файлов)';
       case '/learnskill/lection/html/lec1':
-        return '$name';
+        return 'Создание шапки и подвала сайта';
+      case '/learnskill/lection/html/lec2':
+        return 'Подключение css к html';
       case '/learnskill/useful/program/pgm1':
         return 'Программа "Visual Studio"';
       case '/learnskill/useful/program/pgm2':
         return 'Программа "Visual Studio Code"';
       case '/learnskill/useful/program/pgm3':
-        return 'Программа ""';
+        return 'Программа "Figma"';
       case '/learnskill/useful/program/pgm4':
-        return 'Программа ""';
+        return 'Программа "GitHub Desktop"';
       case '/learnskill/question/task1':
         return 'Добрый друг';
       case '/learnskill/question/task1/quest1':

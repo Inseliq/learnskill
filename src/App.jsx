@@ -5,7 +5,9 @@ import Lection from './components/Lection';
 import Useful from './components/Useful';
 import Politic from './components/Politic';
 import Lec1 from './components/lections/start/Lec1';
-import Lec5 from './components/lections/html_base/Lec5';
+import Lec2 from './components/lections/start/Lec2';
+import Lec3 from './components/lections/html_base/Lec3';
+import Lec4 from './components/lections/html_base/Lec4';
 import Pgm1 from './components/useful/program/Pgm1';
 import Pgm2 from './components/useful/program/Pgm2';
 import Pgm3 from './components/useful/program/Pgm3';
@@ -42,7 +44,9 @@ const App = () => {
         <Route path="/learnskill/schedule" element={<Schedule />} />
         <Route path="/learnskill/question" element={<Question />} />
         <Route path="/learnskill/lection/start/lec1" element={<Lec1 />} />
-        <Route path="/learnskill/lection/html/lec5" element={<Lec5 />} />
+        <Route path="/learnskill/lection/start/lec2" element={<Lec2 />} />
+        <Route path="/learnskill/lection/html/lec1" element={<Lec3 />} />
+        <Route path="/learnskill/lection/html/lec2" element={<Lec4 />} />
         <Route path="/learnskill/useful/program/pgm1" element={<Pgm1 />} />
         <Route path="/learnskill/useful/program/pgm2" element={<Pgm2 />} />
         <Route path="/learnskill/useful/program/pgm3" element={<Pgm3 />} />

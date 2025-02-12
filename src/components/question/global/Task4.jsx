@@ -10,7 +10,7 @@ const Task4 = () => {
   useDocumentTitle('GitHub Pages');
 
   const path = '/learnskill/question/task1/quest5';
-  const path_lec = '/learnskill/useful/program/pgm4';
+  const path_lec = '/learnskill/useful/program/pgm4#pages';
 
   return (
       <Layout>

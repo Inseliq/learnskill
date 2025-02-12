@@ -32,7 +32,7 @@ const Lec1 = () => {
                 Discord Desktop - мы будем использовать для более удобной связи с вами.
                 <p>Там есть задания, расписание тем, вопросы по обучению (любые вопросы которые вы можете задать мне), полезные материалы, ну и просто чатик где мы можем пообщаться о чём захотим.</p>
                 <p className="color red">Добавьте свои репозитории github и gh-pages во вкладку git-hubs</p>
-                <p><a href='' className='link'>Скачать Discord Desktop</a></p>
+                <p><a href='https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64' className='link'>Скачать Discord Desktop</a></p>
               </li>
             </ol>
           </main>

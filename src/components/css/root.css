@@ -5,7 +5,6 @@
 
 :root {
   --index: calc(1vh + 1vw);
-  /* --progress: 70%; */
 }
 
 * {
@@ -16,10 +15,6 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-
-.link
-
-.link.blue
 
 html, body {
   display: flex;
@@ -45,6 +40,22 @@ div.container {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+b {
+  font-weight: 600;
+}
+
+strong {
+  font-weight: 500;
+}
+
+samp.btn {
+  border: none;
+  background: #026ec1;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 3px 6px;
 }
 
 header.color {
@@ -200,6 +211,25 @@ footer.color {
   top: clamp(0.75rem, 0.5146rem + 1.0949vw, 1.5rem);
 }
 
+h5.warp_element {
+  position: relative;
+  font-weight: 300;
+  font-size: clamp(0.8125rem, 0.734rem + 0.365vw, 1.0625rem);
+  margin-top: 25px;
+  margin-left: 15px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    border-radius: 10px;
+    height: 150%;
+    background: #757575;
+    left: -1.5%;
+    top: -25%;
+  }
+}
+
 .view.console.bash {
   display: flex;
   min-width: 275px;
@@ -286,7 +316,6 @@ footer.color {
   opacity: 1;
 }
 
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -327,6 +356,7 @@ footer.color {
     flex-direction: column;
     padding: 2px 20px;
     box-sizing: border-box;
+    z-index: 15;
 
     & .progress {
       width: 100%;
@@ -380,7 +410,7 @@ footer.color {
     background-repeat: no-repeat;
     background-size: 20%;
     background-image: url(../assets/icon/other/plau__icon.png);
-    z-index: 20;
+    z-index: 10;
     opacity: 0.5;
     transition: 0.3s ease;
     cursor: pointer;

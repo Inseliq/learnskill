@@ -10,7 +10,7 @@ const Task3 = () => {
   useDocumentTitle('VSC Расширения');
 
   const path = '/learnskill/question/task1/quest4';
-  const path_lec = '/learnskill/useful/program/pgm2';
+  const path_lec = '/learnskill/useful/program/pgm2#extensions';
 
   return (
       <Layout>

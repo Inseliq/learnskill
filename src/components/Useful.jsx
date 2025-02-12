@@ -144,6 +144,13 @@ const Useful = () => {
                 className="card-useful clamp-gen">
                   <div className="content-card-useful">Clamp Generator</div>
                 </a>
+                <a
+                rel="noopener noreferrer"
+                target='_blank'
+                href='https://htmlweb.ru/html/symbols.php'
+                className="card-useful web-symbols">
+                  <div className="content-card-useful">Web Symbols</div>
+                </a>
               </main>
             </button>
             <button
@@ -153,12 +160,41 @@ const Useful = () => {
                 <span>3. Полезные видео</span>
               </article>
               <main className="content">
-                <NavLink
-                id="usefulVideo1"
-                to="/learnskill/useful"
-                className="card-useful default">
-                  <div className="content-card-useful">Видеваааоаоа</div>
-                </NavLink>
+                <a
+                rel="noopener noreferrer"
+                target='_blank'
+                href='https://www.youtube.com/shorts/1sn_EDSOfJ0'
+                className="card-useful youtube">
+                  <div className="content-card-useful">Фикс залипания на тач-устройствах</div>
+                </a>
+                <a
+                rel="noopener noreferrer"
+                target='_blank'
+                href='https://www.youtube.com/watch?v=Bmtu5eNnjK8&t=4351s'
+                className="card-useful youtube">
+                  <div className="content-card-useful">HTML CSS</div>
+                </a>
+                <a
+                rel="noopener noreferrer"
+                target='_blank'
+                href='https://www.youtube.com/watch?v=fcMcf_4PjfI'
+                className="card-useful youtube">
+                  <div className="content-card-useful">JS</div>
+                </a>
+                <a
+                rel="noopener noreferrer"
+                target='_blank'
+                href='https://www.youtube.com/playlist?list=PL0lO_mIqDDFWltIe7D6aUS5f4k1y2-rgn'
+                className="card-useful youtube">
+                  <div className="content-card-useful">Плей-лист ASP.NET</div>
+                </a>
+                <a
+                rel="noopener noreferrer"
+                target='_blank'
+                href='https://www.youtube.com/watch?v=jLJU27MNdQs'
+                className="card-useful youtube">
+                  <div className="content-card-useful">CSS которые поднимут твой скилл</div>
+                </a>
               </main>
             </button>
             <button
@@ -168,12 +204,13 @@ const Useful = () => {
                 <span>4. Готовые сайты</span>
               </article>
               <main className="content">
-                <NavLink
-                id="usefulVideo1"
-                to="/learnskill/useful"
-                className="card-useful default">
-                  <div className="content-card-useful">Видеваааоаоа</div>
-                </NavLink>
+                <a
+                rel="noopener noreferrer"
+                target='_blank'
+                href='https://inseliq.github.io/friendly_friend/'
+                className="card-useful drug">
+                  <div className="content-card-useful">🐶 Добрый друг</div>
+                </a>
               </main>
             </button>
           </section>

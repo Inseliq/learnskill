@@ -1,11 +1,22 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import Layout from '../../Layout';
 import useDocumentTitle from '../../huks.js/useDocumentTitle';
 
 
 const Pgm2 = () => {
   useDocumentTitle('Программа "Visual Studio Code"');
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   const text = "div>h1{Title}+p{Description}";
   const text_2 = "ul>li*5";
@@ -301,7 +312,7 @@ const Pgm2 = () => {
                 </ol>
               </li>
               <li className="mt20px">
-                <h3>Установка VSC и его расширений</h3>
+                <h3 id='extensions'>Установка VSC и его расширений</h3>
                 <ol>
                   <li>
                     <b>Установка VS-Code</b>
@@ -343,6 +354,20 @@ const Pgm2 = () => {
                         HTML/CSS/JavaScript Snippets
                       </li>
                     </ul>
+                  </li>
+                  <li>
+                    <b>Для того чтобы установить нужно:</b>
+                    <ol>
+                      <li>
+                        Найдите слевой стороны кнопку <strong>"Extensions"</strong>
+                      </li>
+                      <li>
+                        Сверху есть поисковик <strong>"Search"</strong>
+                      </li>
+                      <li>В поиске находим необходимые расширения (например, <strong>Git Graph</strong>)</li>
+                      <li>Нажимаем кнопку <samp className="btn">Install</samp></li>
+                      <li>Всё расширение установленно!</li>
+                    </ol>
                   </li>
                 </ol>
               </li>

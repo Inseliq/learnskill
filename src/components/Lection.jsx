@@ -47,12 +47,12 @@ const Lection = () => {
               <main className="content">
                 <NavLink
                 to="/learnskill/lection/html/lec1"
-                className="card-lections locks">
+                className="card-lections head-html">
                   <div className="content-card-lections">Создание шапки и подвала сайта</div>
                 </NavLink>
                 <NavLink
                 to="/learnskill/lection/html/lec2"
-                className="card-lections locks">
+                className="card-lections link-html">
                   <div className="content-card-lections">Подключение css к html</div>
                 </NavLink>
               </main>

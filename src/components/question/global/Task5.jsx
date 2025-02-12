@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Layout from '../../Layout';
 import useDocumentTitle from '../../huks.js/useDocumentTitle';
-import Console from '../../Console';
 import NextBtn from '../../NextBtn';
 import LecBtn from '../../LecBtn';
 
@@ -12,32 +11,6 @@ const Task5 = () => {
 
   const path = '/learnskill/question/task1/quest6';
   const path_lec = '/learnskill/lection/start/lec2';
-
-  const consoles = [
-    {
-      title: "bash",
-      content: `
-/$name
-│── /assets
-│   ├── /ico
-│   │   ├── logo_ico.png
-│   ├── /img
-│   ├── /fonts
-│── /src
-│   ├── /css
-│   │   ├── /styles
-│   │   │   ├── main.css
-│   │   ├── root.css
-│   │   ├── fonts.css
-│   │   ├── const.color.css
-│   ├── /js
-│   │   ├── app.js
-├── .gitattributes
-├── index.html
-├── notes.txt
-      `,
-    },
-  ];
 
   return (
       <Layout>
@@ -64,7 +37,6 @@ const Task5 = () => {
                 <li className="coments">/assets - название папки;</li>
                 <li className="coments">logo_ico.png - любой файл</li>
               </ol>
-              <Console consoles={ consoles } />
             </div>
           </div>
         </div>
