@@ -7,4 +7,14 @@ footer.bottom {
   align-items: center;
   background: var(--footer);
   font-family: "Montserrat Alternates", serif;
+
+  & .link-img {
+    height: 7vh;
+    width: 7vh;
+
+    & img {
+      height: 7vh;
+      width: 7vh;
+    }
+  }
 }

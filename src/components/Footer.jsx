@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import pay_img from './assets/icon/other/pay_img.png';
 
 const Footer = () => {
   const location = useLocation();
@@ -13,6 +14,9 @@ const Footer = () => {
         className={location.pathname === '/learnskill/politic' ? 'on-this link' : 'link'}>
           Политика конфиденциальности
         </NavLink>
+        <a rel="noopener noreferrer" target='_blank' href="https://www.donationalerts.com/r/ncuxoseeliq" className="link-img">
+          <img src={ pay_img } alt="pay" />
+        </a>
     </footer>
   );
 };
