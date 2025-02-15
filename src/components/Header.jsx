@@ -36,6 +36,22 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
         return 'Создание шапки и подвала сайта';
       case '/learnskill/lection/html/lec2':
         return 'Подключение css к html';
+      case '/learnskill/lection/css/lec1':
+        return 'Работа над шапкой и подвалом';
+      case '/learnskill/lection/css/itog_code1':
+        return 'Итоговый код';
+      case '/learnskill/lection/css/itog_code2':
+        return 'Итоговый код';
+      case '/learnskill/lection/css/itog_code3':
+        return 'Итоговый код';
+      case '/learnskill/lection/css/itog_code4':
+        return 'Итоговый код';
+      case '/learnskill/lection/css/lec2':
+        return 'Работа с шрифтами';
+      case '/learnskill/lection/css/lec3':
+        return 'Работа с цветами';
+      case '/learnskill/lection/css/lec4':
+        return 'Стилизация шапки';
       case '/learnskill/useful/program/pgm1':
         return 'Программа "Visual Studio"';
       case '/learnskill/useful/program/pgm2':
@@ -90,7 +106,36 @@ const Header = ({toggleSidebar, isSidebarOpen}) => {
           <h2 id='description'>{getDescriptionText()}</h2>
         </div>
         <div className='service'>
-          {/* <button className="notification"></button> */}
+          <button className="aside-menu__right">
+          <span className="element">
+            🔔
+          </span>
+          <div className="menu__content">
+            <div className="head-menu__content">
+              <h2>Панель уведомлений</h2>
+            </div>
+            <div className="main-menu__content adt">
+              <h4 className='upd-name latest'>⚡ Обновление 0.1.5</h4>
+              <p>1. Написаны лекции для css, а так же немного изменён курс по css </p>
+              <p>2. Фикс багов найденные пользователями</p>
+              <p>3. Добавлен переключатель</p>
+              <p>• Видеоурок</p>
+              <p>• Лекция</p>
+              <p>4. Переделана маршрутизация до компонентов проекта</p>
+              <p>5. Добавлена возможность движения к якорям страниц</p>
+              <p>6. Добавлена возможность движения к якорям страниц при переходе на другую страницу</p>
+              <p>7. Добавлены более удобные итоги кода</p>
+              <h4 className="upd-name pre">🔥 Обновление 0.1.4</h4>
+              <p className="pre">1. Добавлена минюшка контроля обновлений.</p>
+              <p className='pre'>2. Обновлён курс по html</p>
+              <p className='pre'>3. Обновлён сборщик проекта</p>
+              <p className='pre'>4. Обновлён видео плеер для видеоуроков и будующих записей вебинаров</p>
+              <p className='pre'>5. Добавлены видео для видеоуроков по html</p>
+              <h4 className="upd-name pre"><span className="snow-elem">❄</span> Обновления 0.0.1 - 0.1.3</h4>
+              <p className='pre'>Отображаться ну будут!!!</p>
+            </div>
+          </div>
+        </button>
           <NavLink
         id="preference"
         to="/learnskill/useful"

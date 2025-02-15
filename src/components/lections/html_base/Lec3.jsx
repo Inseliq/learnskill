@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Layout from '../../Layout';
 import useDocumentTitle from '../../huks.js/useDocumentTitle';
-import VideoPlayer from '../../VideoPlayer';
-import path from '../../assets/video/video.mp4';
-import poster from '../../assets/img/chat-gpt__img.jpg';
 import Console from '../../Console';
 
 const Lec3 = () => {
@@ -181,7 +178,7 @@ const Lec3 = () => {
     <Layout>
       <div className="LectionPage videoLection">
         <NavLink to="/learnskill/lection" className="back-link back"></NavLink>
-
+        <a rel="noopener noreferrer" target='_blank' href='https://vkvideo.ru/video-229351453_456239018?list=ln-T6NKWZ5MhWrBHMEhUZ' className="back-link right"></a>
         <div className="block-button_container">
           <button
             className={`text_lection ${activeTab === 'text' ? 'active' : ''}`}
@@ -225,7 +222,7 @@ const Lec3 = () => {
                 span.context+a.link.contacts
                 </b>В span заполняем текст <strong>"© 2025 Добрый друг"</strong>
               </li>
-              <li>8. Остаётся разработать <b>основную часть (main)</b></li>
+              <li className='none'>8. Остаётся разработать <b>основную часть (main)</b></li>
             </ul>
             <h3>Конечный результат 🚀</h3>
             <Console consoles={ consoles } />
@@ -234,7 +231,7 @@ const Lec3 = () => {
 
         {activeTab === 'video' && (
           <article className="main_video_content">
-            <VideoPlayer src={path} poster={poster}/>
+            <iframe src="https://vkvideo.ru/video_ext.php?oid=-229351453&id=456239018&hd=2&hash=ad0cb0d8dbcb7c86" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" className='video-player' frameborder="0" allowfullscreen></iframe>
           </article>
         )}
       </div>

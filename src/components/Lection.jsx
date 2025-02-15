@@ -66,22 +66,22 @@ const Lection = () => {
               <main className="content">
                 <NavLink
                 to="/learnskill/lection/css/lec1"
-                className="card-lections locks">
+                className="card-lections work-on-head">
                   <div className="content-card-lections">Работа с шапкой и подвалом</div>
                 </NavLink>
                 <NavLink
-                to="/learnskill/lection/html/lec2"
-                className="card-lections locks">
+                to="/learnskill/lection/css/lec2"
+                className="card-lections fonts-pref">
                   <div className="content-card-lections">Работа с шрифтами</div>
                 </NavLink>
                 <NavLink
-                to="/learnskill/lection/html/lec2"
-                className="card-lections locks">
+                to="/learnskill/lection/css/lec3"
+                className="card-lections color-pref">
                   <div className="content-card-lections">Работа с цветами</div>
                 </NavLink>
                 <NavLink
-                to="/learnskill/lection/html/lec2"
-                className="card-lections locks">
+                to="/learnskill/lection/css/lec4"
+                className="card-lections style-head">
                   <div className="content-card-lections">Стилизация шапки</div>
                 </NavLink>
               </main>

@@ -8,6 +8,14 @@ import Lec1 from './components/lections/start/Lec1';
 import Lec2 from './components/lections/start/Lec2';
 import Lec3 from './components/lections/html_base/Lec3';
 import Lec4 from './components/lections/html_base/Lec4';
+import Lec5 from './components/lections/css_base/Lec5';
+import Itog1 from './components/lections/css_base/Itog1';
+import Itog2 from './components/lections/css_base/Itog2';
+import Itog3 from './components/lections/css_base/Itog3';
+import Itog4 from './components/lections/css_base/Itog4';
+import Lec6 from './components/lections/css_base/Lec6';
+import Lec7 from './components/lections/css_base/Lec7';
+import Lec8 from './components/lections/css_base/Lec8';
 import Pgm1 from './components/useful/program/Pgm1';
 import Pgm2 from './components/useful/program/Pgm2';
 import Pgm3 from './components/useful/program/Pgm3';
@@ -47,6 +55,14 @@ const App = () => {
         <Route path="/learnskill/lection/start/lec2" element={<Lec2 />} />
         <Route path="/learnskill/lection/html/lec1" element={<Lec3 />} />
         <Route path="/learnskill/lection/html/lec2" element={<Lec4 />} />
+        <Route path="/learnskill/lection/css/lec1" element={<Lec5 />} />
+        <Route path="/learnskill/lection/css/itog_code1" element={<Itog1 />} />
+        <Route path="/learnskill/lection/css/itog_code2" element={<Itog2 />} />
+        <Route path="/learnskill/lection/css/itog_code3" element={<Itog3 />} />
+        <Route path="/learnskill/lection/css/itog_code4" element={<Itog4 />} />
+        <Route path="/learnskill/lection/css/lec2" element={<Lec6 />} />
+        <Route path="/learnskill/lection/css/lec3" element={<Lec7 />} />
+        <Route path="/learnskill/lection/css/lec4" element={<Lec8 />} />
         <Route path="/learnskill/useful/program/pgm1" element={<Pgm1 />} />
         <Route path="/learnskill/useful/program/pgm2" element={<Pgm2 />} />
         <Route path="/learnskill/useful/program/pgm3" element={<Pgm3 />} />

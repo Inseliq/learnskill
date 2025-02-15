@@ -25,12 +25,13 @@ const Task5 = () => {
             <div className="text-task">
               <h2>Структурирование файлов</h2>
               <ol>
-                <li>Создать папки assets и src, а так же для удобства notes.txt</li>
-                <li>В папке src создать папки css и js</li>
-                <li>В папке css создать папку style, а также файлы root.css, fonts.css, const.color.css</li>
-                <li>В папке style создать файл main.css</li>
-                <li>В папке js создать файл app.js</li>
-                <li>В папке assets создать папки fonts, ico, img</li>
+                <li>В корневой папке создать файл <b>index.html</b></li>
+                <li>Создать папки <b>assets</b> и <b>src</b>, а так же для удобства <b>notes.txt</b></li>
+                <li>В папке <b>src</b> создать папки <b>css</b> и <b>js</b></li>
+                <li>В папке css создать папку <b>style</b>, а также файлы <b>root.css, fonts.css, const.color.css</b></li>
+                <li>В папке <b>style</b> создать файл <b>main.css</b></li>
+                <li>В папке <b>js</b> создать файл <b>app.js</b></li>
+                <li>В папке <b>assets</b> создать папки <b>fonts, ico, img</b></li>
                 <li className="coments">//Пример как должно выглядить, написал специально через консоль чтобы вы в дальнейшем могли работать с ChatGPT</li>
                 <li className="coments">Объяснение:</li>
                 <li className="coments">/$name - название репозитория;</li>

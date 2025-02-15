@@ -141,6 +141,22 @@
         & .link-html {
           background-image: url(../../assets/img/screen/saved_14.jpg);
         }
+
+        & .work-on-head {
+          background-image: url(../../assets/img/screen/saved_15.jpg);
+        }
+
+        & .fonts-pref {
+          background-image: url(../../assets/img/screen/saved_16.jpg);
+        }
+
+        & .color-pref {
+          background-image: url(../../assets/img/screen/saved_17.jpg);
+        }
+
+        & .style-head {
+          background-image: url(../../assets/img/screen/saved_18.jpg);
+        }
       }
     }
 
@@ -182,6 +198,13 @@
   & .back {
     top: 0;
     left: 0;
+  }
+
+  & .right {
+    top: 0;
+    right: 10px;
+    background-image: url(../../assets/icon/other/vk-video.jpg);
+    z-index: 3;
   }
 
   & .block-button_container {
@@ -291,6 +314,14 @@
       }
     }
 
+    & p.comments {
+      color: gray;
+
+      & b, strong {
+        color: gray;
+      }
+    }
+
     & ul li {
       list-style-type: disc;
     }
@@ -352,6 +383,22 @@
         line-height: 1.7;
       }
 
+      & li.lh_small {
+        line-height: 1;
+      }
+
+      & ul.list {
+        margin-left: 36px;
+      }
+
+      & ol.list {
+        margin-left: 36px;
+
+        & li {
+          list-style-type: decimal;
+        }
+      }
+
       & .color.red.none {
         margin-left: 30px;
       }
@@ -360,6 +407,7 @@
     & ol li {
       margin-top: 5px;
       margin-left: 22px;
+      list-style-type: decimal;
     }
 
     & .mt20px {

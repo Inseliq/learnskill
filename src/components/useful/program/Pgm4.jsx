@@ -62,7 +62,7 @@ const Pgm4 = () => {
                   <li>Введи <b>имя проекта</b> и выбери папку</li>
                   <li>Нажми <b>Create Repository</b></li>
                   <li>Всё! Теперь у тебя есть локальный репозиторий</li>
-                  <li>Опублику его → <b>Publish Repository</b></li>
+                  <li>Опубликуй его → <b>Publish Repository</b></li>
                 </ol>
                 <h4 className='mt10px'>🔹 Клонирование репозитория с GitHub</h4>
                 <p className='mt10px'>Если у тебя уже есть проект на GitHub:</p>

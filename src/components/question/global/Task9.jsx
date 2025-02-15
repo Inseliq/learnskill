@@ -10,7 +10,7 @@ const Task9 = () => {
   useDocumentTitle('CSS вёрстка');
 
   const path = '/learnskill/question/task1/quest7';
-  const path_lec = '/learnskill/lection/css/lec3';
+  const path_lec = '/learnskill/lection/css/lec1';
 
   return (
       <Layout>

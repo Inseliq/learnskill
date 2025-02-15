@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Layout from '../../Layout';
 import useDocumentTitle from '../../huks.js/useDocumentTitle';
-import VideoPlayer from '../../VideoPlayer';
-import path from '../../assets/video/video.mp4';
-import poster from '../../assets/img/chat-gpt__img.jpg';
 import Console from '../../Console';
 
 const Lec2 = () => {
@@ -42,7 +39,7 @@ const Lec2 = () => {
     <Layout>
       <div className="LectionPage videoLection">
         <NavLink to="/learnskill/lection" className="back-link back"></NavLink>
-
+        <a rel="noopener noreferrer" target='_blank' href='https://vkvideo.ru/video-229351453_456239017?list=ln-RSm13bCQUChQ2tQR4T' className="back-link right"></a>
         <div className="block-button_container">
           <button
             className={`text_lection ${activeTab === 'text' ? 'active' : ''}`}
@@ -108,7 +105,7 @@ const Lec2 = () => {
 
         {activeTab === 'video' && (
           <article className="main_video_content">
-            <VideoPlayer src={path} poster={poster}/>
+            <iframe src="https://vkvideo.ru/video_ext.php?oid=-229351453&id=456239017&hd=2&hash=804976dedd56c582" allow="encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" className='video-player' allowfullscreen></iframe>
           </article>
         )}
       </div>
